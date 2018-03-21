@@ -11,4 +11,10 @@ public class Pair {
 		this.s2 = s2;
 		this.similarity = similarity;
 	}
+	
+	public void init(String s1, String s2 , double similarity) {
+		this.s1 = s1;
+		this.s2 = s2;
+		this.similarity = similarity;
+	}
 }

@@ -2,16 +2,24 @@ package com.github.pepsi7959;
 
 public class Similarity {
 
-	int tcnt = 0;
+	int tcnt;
 
 	String s1;
 	String s2;
 
+	public Similarity() {
+		init("","");
+	}
 	public Similarity(String s1, String s2) {
-		this.s1 = s1;
-		this.s2 = s2;
+		init(s1,s2);
 	}
 
+	public void init(String s1, String s2) {
+		this.s1 = s1;
+		this.s2 = s2;
+		tcnt = 0;
+	}
+	
 	public double simil() {
 
 		int tlen = 0, s1len = 0, s2len = 0;
